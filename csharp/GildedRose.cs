@@ -15,7 +15,7 @@ namespace csharp
         {
             foreach (var item in _items)
             {
-                var processor = ItemTypeFactory.GetItemProcessor(item);
+                var processor = ItemProcessorFactory.GetItemProcessor(item);
 
                 if (processor != null)
                 {

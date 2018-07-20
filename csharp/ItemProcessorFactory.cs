@@ -2,7 +2,7 @@
 
 namespace csharp
 {
-    public static class ItemTypeFactory
+    public static class ItemProcessorFactory
     {
         /// <summary>
         /// Gets an item processor to handle updating the item's quality and sellIn days remaining

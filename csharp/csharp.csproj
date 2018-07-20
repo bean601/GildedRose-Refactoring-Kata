@@ -71,7 +71,7 @@
     <Compile Include="ItemProcessors\ConjuredItemProcessor.cs" />
     <Compile Include="ItemProcessors\IItemProcessor.cs" />
     <Compile Include="ItemProcessors\LegendaryItemProcessor.cs" />
-    <Compile Include="ItemTypeFactory.cs" />
+    <Compile Include="ItemProcessorFactory.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
