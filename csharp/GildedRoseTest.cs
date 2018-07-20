@@ -177,15 +177,15 @@ namespace csharp
 
             Assert.AreEqual(0, items[0].Quality);
             Assert.AreEqual(4, items[0].SellIn);
-            Assert.AreEqual(49, items[1].Quality);
+            Assert.AreEqual(48, items[1].Quality);
             Assert.AreEqual(49, items[1].SellIn);
-            Assert.AreEqual(9, items[2].Quality);
+            Assert.AreEqual(8, items[2].Quality);
             Assert.AreEqual(1, items[2].SellIn);
-            Assert.AreEqual(9, items[3].Quality);
+            Assert.AreEqual(8, items[3].Quality);
             Assert.AreEqual(9, items[3].SellIn);
-            Assert.AreEqual(9, items[4].Quality);
+            Assert.AreEqual(8, items[4].Quality);
             Assert.AreEqual(0, items[4].SellIn);
-            Assert.AreEqual(8, items[5].Quality);
+            Assert.AreEqual(6, items[5].Quality);
             Assert.AreEqual(-2, items[5].SellIn);
         }
     }
