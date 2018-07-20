@@ -68,6 +68,7 @@
     <Compile Include="ItemProcessors\AgedBrieProcessor.cs" />
     <Compile Include="ItemProcessors\BackstagePassProcessor.cs" />
     <Compile Include="ItemProcessors\CommonItemProcessor.cs" />
+    <Compile Include="ItemProcessors\ConjuredItemProcessor.cs" />
     <Compile Include="ItemProcessors\IItemProcessor.cs" />
     <Compile Include="ItemProcessors\LegendaryItemProcessor.cs" />
     <Compile Include="ItemTypeFactory.cs" />

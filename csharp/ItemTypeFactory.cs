@@ -24,6 +24,9 @@ namespace csharp
                 case "backstage passes to a tafkal80etc concert":
                     processor = new BackstagePassProcessor(item);
                     break;
+                case "conjured mana cake":
+                    processor = new ConjuredItemProcessor(item);
+                    break;
                 default:
                     processor = new CommonItemProcessor(item);
                     break;
