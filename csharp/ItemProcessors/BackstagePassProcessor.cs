@@ -19,7 +19,7 @@
         {
             _item.SellIn--;
 
-            if (_item.SellIn <= 0)
+            if (_item.SellIn < 0)
             {
                 _item.Quality = 0;
             }
@@ -27,11 +27,11 @@
             {
                 _item.Quality++; //increases by 1 everyday
 
-                if (_item.SellIn <= 10)
+                if (_item.SellIn < 10)
                 {
                     _item.Quality++; //increases by 2 if its less than 10 days till concert
 
-                    if (_item.SellIn <= 5)
+                    if (_item.SellIn < 5)
                     {
                         _item.Quality++; //increases by 3 if less than 5 days till concert
                     }

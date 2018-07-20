@@ -109,6 +109,7 @@ namespace csharp
                 new Item { Name = "Backstage passes to a TAFKAL80ETC concert", SellIn = 17, Quality = 5 },
                 new Item { Name = "Backstage passes to a TAFKAL80ETC concert", SellIn = 10, Quality = 5 },
                 new Item { Name = "Backstage passes to a TAFKAL80ETC concert", SellIn = -1, Quality = 50 },
+                new Item { Name = "Backstage passes to a TAFKAL80ETC concert", SellIn = 1, Quality = 50 },
             };
 
             var app = new GildedRose(items);
@@ -127,6 +128,8 @@ namespace csharp
             Assert.AreEqual(9, items[4].SellIn);
             Assert.AreEqual(0, items[5].Quality);
             Assert.AreEqual(-2, items[5].SellIn);
+            Assert.AreEqual(50, items[6].Quality);
+            Assert.AreEqual(0, items[6].SellIn);
         }
 
         [Test]
@@ -165,6 +168,7 @@ namespace csharp
                 new Item { Name = "Conjured Mana Cake", SellIn = 2, Quality = 10 },
                 new Item { Name = "Conjured Mana Cake", SellIn = 10, Quality = 10 },
                 new Item { Name = "Conjured Mana Cake", SellIn = 1, Quality = 10 },
+                new Item { Name = "Conjured Mana Cake", SellIn = -1, Quality = 10 },
             };
 
             var app = new GildedRose(items);
@@ -173,14 +177,16 @@ namespace csharp
 
             Assert.AreEqual(0, items[0].Quality);
             Assert.AreEqual(4, items[0].SellIn);
-            Assert.AreEqual(48, items[1].Quality);
+            Assert.AreEqual(49, items[1].Quality);
             Assert.AreEqual(49, items[1].SellIn);
-            Assert.AreEqual(8, items[2].Quality);
+            Assert.AreEqual(9, items[2].Quality);
             Assert.AreEqual(1, items[2].SellIn);
-            Assert.AreEqual(8, items[3].Quality);
+            Assert.AreEqual(9, items[3].Quality);
             Assert.AreEqual(9, items[3].SellIn);
-            Assert.AreEqual(8, items[4].Quality);
+            Assert.AreEqual(9, items[4].Quality);
             Assert.AreEqual(0, items[4].SellIn);
+            Assert.AreEqual(8, items[5].Quality);
+            Assert.AreEqual(-2, items[5].SellIn);
         }
     }
 }

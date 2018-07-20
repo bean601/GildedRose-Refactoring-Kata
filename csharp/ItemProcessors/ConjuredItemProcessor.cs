@@ -10,13 +10,17 @@
         }
         
         /// <summary>
-        /// Conjured item's quality degraded twice as fast as normal
+        /// Conjured item's quality degraded twice as fast as normal (after reaching zero - found through Approval tests)
         /// </summary>
         public void UpdateSellInAndQuality()
         {
             _item.SellIn--;
 
             if (_item.SellIn >= 0)
+            {
+                _item.Quality--;
+            }
+            else
             {
                 _item.Quality -= 2;
             }
