@@ -12,6 +12,7 @@ namespace csharp
     public class ApprovalTest
     {
         [Test]
+        [Ignore("not running the Approval test yet")]
         public void ThirtyDays()
         {
             StringBuilder fakeoutput = new StringBuilder();

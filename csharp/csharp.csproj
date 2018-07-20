@@ -65,6 +65,12 @@
     <Compile Include="GildedRose.cs" />
     <Compile Include="GildedRoseTest.cs" />
     <Compile Include="Item.cs" />
+    <Compile Include="ItemProcessors\AgedBrieProcessor.cs" />
+    <Compile Include="ItemProcessors\BackstagePassProcessor.cs" />
+    <Compile Include="ItemProcessors\CommonItemProcessor.cs" />
+    <Compile Include="ItemProcessors\IItemProcessor.cs" />
+    <Compile Include="ItemProcessors\LegendaryItemProcessor.cs" />
+    <Compile Include="ItemTypeFactory.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
